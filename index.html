@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Splitter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📄 File Splitter</h1>
+        
+        <div class="upload-area" id="uploadArea">
+            <div class="upload-icon">📁</div>
+            <div class="upload-text">Drop your file here or click to browse</div>
+            <div class="upload-subtext">Supports .txt files for splitting based on "Plate" markers</div>
+        </div>
+        
+        <input type="file" id="fileInput" accept=".txt" />
+        
+        <button class="process-btn" id="processBtn" disabled>
+            🔄 Process File
+        </button>
+        
+        <div class="processing" id="processing">
+            <div class="spinner"></div>
+            Processing your file...
+        </div>
+        
+        <div id="status"></div>
+        
+        <div class="results" id="results"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
